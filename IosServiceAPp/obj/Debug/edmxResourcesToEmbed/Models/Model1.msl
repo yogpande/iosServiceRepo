@@ -1,0 +1,16 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="iosServiceDBModelStoreContainer" CdmEntityContainer="iosServiceDBEntities">
+    <EntitySetMapping Name="tblHouses">
+      <EntityTypeMapping TypeName="iosServiceDBModel.tblHouse">
+        <MappingFragment StoreEntitySet="tblHouse">
+          <ScalarProperty Name="houseid" ColumnName="houseid" />
+          <ScalarProperty Name="housename" ColumnName="housename" />
+          <ScalarProperty Name="housepic" ColumnName="housepic" />
+          <ScalarProperty Name="housedetails" ColumnName="housedetails" />
+          <ScalarProperty Name="city" ColumnName="city" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+  </EntityContainerMapping>
+</Mapping>

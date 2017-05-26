@@ -1,0 +1,16 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="iosServiceDBModel" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+  <EntityType Name="tblHouse">
+    <Key>
+      <PropertyRef Name="houseid" />
+    </Key>
+    <Property Name="houseid" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="housename" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="housepic" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+    <Property Name="housedetails" Type="String" MaxLength="250" FixedLength="false" Unicode="false" />
+    <Property Name="city" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+  </EntityType>
+  <EntityContainer Name="iosServiceDBEntities" annotation:LazyLoadingEnabled="true">
+    <EntitySet Name="tblHouses" EntityType="Self.tblHouse" />
+  </EntityContainer>
+</Schema>
